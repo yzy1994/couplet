@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>深度学习对对联</title>
+    <link href="./css/index.css" rel="stylesheet" type="text/css"/>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+	<script src="./js/index.js" type="text/javascript"></script> 
+</head>
+
+<body>
+    <div class="container m-t-20">
+		<div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+				<h1 class="couplet-header">
+					Seq2Seq 模型应用
+				</h1>
+                <div class="input-group" class="m-t-20">
+                    <input type="text" id="couplet-input" placeholder="请输入上联">
+                    <button type="button" class="btn btn-primary" id="input-btn">对下联</button>
+                </div>
+				<div id="result-content" class="m-t-20">
+					<div class="content-group m-t-20"><div class="content-text col-xs-1">上联:</div><div id="inseq" class="sequence col-xs-9"></div></div>
+					<div class="content-group m-t-20"><div class="content-text col-xs-1">下联:</div><div id="outseq" class="sequence col-xs-9"></div></div>
+				</div>
+
+            </div>
+		</div>
+    </div>
+</body>
+
+</html>
